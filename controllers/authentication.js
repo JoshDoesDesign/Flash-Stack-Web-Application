@@ -63,7 +63,7 @@ var authenticationController = {
       // which will be read and used in the "login" handler above and then redirect
       // to that handler.
       if(!user) {
-        req.flash('error', 'Error logging in. Please try again.');
+        req.flash('error', 'Log-In Error');
         return res.redirect('/auth/login');
       }
       

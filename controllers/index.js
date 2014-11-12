@@ -11,7 +11,7 @@ var indexController = {
     // logged-in user's document from the database
     // via the injected "req.user" variable
 
-    Card.find({owner: req.user._id}, function(err, cards){
+    Card.find({owner: req.user._id}).sort({_id:-1}).exec(function(err, cards){
       res.render('index', {
         // Left side is what Jade sees, right side what it will translate to
         user: req.user,

@@ -105,6 +105,12 @@ ul {
   bottom: 0;
   min-height: 100%; }
 
+.error-message {
+  color: red;
+  position: absolute;
+  right: 16px;
+  font-size: 22px; }
+
 .register-header {
   font-size: 22px;
   margin-top: 25px;
@@ -228,7 +234,7 @@ ul {
 .flashstack-instructions {
   text-align: center;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0px; }
 
 .submit-button {
