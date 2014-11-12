@@ -182,7 +182,7 @@ ul {
 
 .log-in-submit {
   color: #FFF;
-  width: 270px;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
   height: 36px;
@@ -193,7 +193,7 @@ ul {
 
 .sign-up-submit {
   color: #FFF;
-  width: 270px;
+  width: 100%;
   height: 36px;
   font-size: 15px;
   background-color: orange; }
@@ -203,6 +203,14 @@ ul {
   height: 55px;
   position: relative;
   width: 100%; }
+
+.content-vertical-wrapper > * {
+  display: table-cell;
+  vertical-align: middle; }
+
+.content-vertical-wrapper {
+  display: table;
+  height: 100%; }
 
 .wtd-small-logo {
   height: 22px;
@@ -253,7 +261,7 @@ ul {
 
 .input-text-field {
   margin-bottom: 10px;
-  width: 270px;
+  width: 100%;
   height: 35px; }
 
 .input-text-field:last-of-type {
@@ -309,16 +317,9 @@ ul {
     border: none;
     color: #FFF; }
 
-.homepage-content {
-  margin-top: 200px;
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative; }
-
 .existing-user-container {
   background-color: #FFF;
   height: 408px;
-  width: 300px;
   border-radius: 10px; }
 
 .wtd-logo-container {
@@ -337,6 +338,9 @@ ul {
 
 .card-container {
   margin: 0 auto; }
+
+.container {
+  height: 100%; }
 
 .card-header {
   font-size: 68px;

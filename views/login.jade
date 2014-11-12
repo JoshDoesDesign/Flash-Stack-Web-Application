@@ -7,36 +7,37 @@ block content
   div#bg
     img(src='/flash-photo-4-adobe6.JPG')
 
-  div.container
-    div.row.helper
-      div.homepage-content
-        //- LOGO AND BODY TEXT
-        div.large-logo-container.col-lg-5.col-lg-offset-1.col-md-6.col-sm-6.col-xs-12
-          img(src='/flashstack-large-logo.png').wtd-logo-container
-          p.summary-paragraph
-        
-        //- SIGN UP AND LOG IN FORM
-        div.existing-user-container.col-lg-4.col-lg-offset-2.col-md-6.col-sm-6.col-xs-12
+  .container
+    .content-vertical-wrapper
+      .homepage-content
+        .row
+          //- LOGO AND BODY TEXT
+          div.large-logo-container.col-lg-5.col-lg-offset-1.col-md-6.col-sm-6.col-xs-12
+            img(src='/flashstack-large-logo.png').wtd-logo-container
+            p.summary-paragraph
+          
+          //- SIGN UP AND LOG IN FORM
+          div.existing-user-container.col-lg-4.col-lg-offset-2.col-md-6.col-sm-6.col-xs-12
 
-          if error
-            h3.error-message= error
+            if error
+              h3.error-message= error
 
-          //- ^ The above error comes through via the context passed when calling res.render('login', {...})
-          //- You'll see this in controllers/authentication.js
-          //- If the error exists, we'll display it.
+            //- ^ The above error comes through via the context passed when calling res.render('login', {...})
+            //- You'll see this in controllers/authentication.js
+            //- If the error exists, we'll display it.
 
-          //- Form for handling existing user logins.
-          h3.color-test Existing Users
-          form(action="/auth/login", method="post")
-            input(type="text", name="username", placeholder="Username").input-text-field
-            input(type="password", name="password", placeholder="Password").input-text-field
-            div.submit-wrapper
-              input(type="submit", value="Log In").btn.log-in-submit    
-          //- Form for allowing new users to register.
-          h3.register-header Register
-          form(action="/auth/signup", method="post")
-            input(type="text", name="username", placeholder="Username").input-text-field
-            input(type="email", name="email", placeholder="Email").input-text-field
-            input(type="password", name="password", placeholder="Password").input-text-field
-            div.submit-wrapper-2
-              input(type="submit", value="Sign Up").btn.sign-up-submit
+            //- Form for handling existing user logins.
+            h3.color-test Existing Users
+            form(action="/auth/login", method="post")
+              input(type="text", name="username", placeholder="Username").input-text-field
+              input(type="password", name="password", placeholder="Password").input-text-field
+              div.submit-wrapper
+                input(type="submit", value="Log In").btn.log-in-submit    
+            //- Form for allowing new users to register.
+            h3.register-header Register
+            form(action="/auth/signup", method="post")
+              input(type="text", name="username", placeholder="Username").input-text-field
+              input(type="email", name="email", placeholder="Email").input-text-field
+              input(type="password", name="password", placeholder="Password").input-text-field
+              div.submit-wrapper-2
+                input(type="submit", value="Sign Up").btn.sign-up-submit
