@@ -1,0 +1,290 @@
+
+/***************** 
+*** GENERAL CSS **
+*****************/
+
+body {
+	background-color: #00aeef;
+	/*background: no-repeat center bottom scroll; */
+/*	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 150px;
+    padding-top: 2%;
+    font-size: 100%;
+    background-image: url("/flash-photo-4-adobe3.JPG");*/
+
+}
+
+input {
+	font-size: 0.95em;
+	border-radius: 4px;
+	border: 1px solid #cccccc;
+	padding-left: 10px;
+}
+
+input:hover {
+	border-radius: 4px;
+}
+
+h3 {
+	color: #4e4e4e;
+	margin-top: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+/***************** 
+**** BY CLASS ****
+*****************/
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.background {
+	/*background-color: #00aeef;*/
+	/*background: no-repeat center bottom scroll; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 150px;
+    padding-top: 2%;
+    font-size: 100%;
+    background-image: url("/flash-photo-4-adobe3.JPG");
+    bottom: 0;
+    min-height: 100%;
+}
+
+.register-header {
+	font-size: 22px;
+}
+
+.color-test {
+	font-size: 22px;
+}
+
+.top-section-wrapper {
+	background-color: #FFF;
+	border-radius: 10px;
+	width: 708px;
+	padding: 10px 2px 16px 21px;
+}
+
+.nav-link {
+	position: absolute;
+	right: 30px;
+	font-weight: 500;
+	margin-top: 17px;
+}
+
+.nav-link:hover {
+	text-decoration: none;
+}
+
+.log-in-submit {
+	color: #FFF;
+	width: 270px;
+	margin-top: 10px;
+	height: 36px;
+	background-color: #3DACF2;
+}
+
+.log-in-submit {
+	color: #FFF;
+}
+
+.sign-up-submit {
+	color: #FFF;
+	width: 270px;
+	height: 36px;
+	background-color: orange;
+}
+
+.sign-up-submit:hover {
+
+}
+
+.header-wrapper {
+	background-color: #FFF;
+	height: 55px;
+	width: 100%;
+}
+
+.wtd-small-logo {
+	height: 25px;
+	margin-top: 15px;
+	margin-left: 125px;
+}
+
+.wrapper {
+	margin-left: 32px;
+	margin-top: 58px;
+}
+
+.welcome-page-h1 {
+	margin-top: 1px;
+	color: #303030 ;
+}
+
+.welcome-page-h3 {
+	font-weight: normal;
+	color: #303030 ;
+}
+
+.question-input {
+	display: block;
+}
+
+.answer-input {
+	display: block;
+}
+
+.submit-button {
+	background-color: orange;
+	width: 270px;
+	height: 36px;	
+}
+
+.existing-user-container {
+	background-color: #FFF;
+	height: 401px;
+	width: 300px;
+	border-radius: 10px;
+	margin-top: 142px;
+}
+
+.wtd-logo-container {
+	height: 300px;
+	width: 300px;
+	margin-top: 170px;
+	margin-left: 20px;
+}
+
+.input-text-field {
+	margin-bottom: 10px;
+	width: 270px;
+	height: 35px;
+}
+
+.input-text-field:last-of-type {
+	margin-bottom: 0px;
+}
+
+.register-header {
+	margin-top: 7px;
+}
+
+.submit-wrapper-2 {
+	margin-top: 10px;
+}
+
+.summary {
+	position: relative;
+	top: -50px;
+}
+
+.summary-paragraph {
+	color: #FFF;
+	font-size: 28px;
+	margin: 10px 0 0 10px;
+	font-weight: lighter;
+}
+
+.card-delete-button {
+	height: 10px;
+	width: 10px;
+	background-color: green;
+}
+
+.homepage-content {
+	margin: 0 auto;
+}
+
+.exact-center {
+	position: relative;
+	top: 50%;
+	height: 50%;
+}
+
+/********************* 
+**** MEDIA QUERIES ***
+*********************/
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+	.wtd-logo-container {
+		margin-left: 10px;
+	}
+	.summary-paragraph {
+		margin-left: 15px;
+		font-size: 26px;
+	}
+	.existing-user-container {
+		margin-left: 52px;
+	}	
+}	
+
+@media screen and (min-width: 551px) and (max-width: 899px) {
+	.wtd-logo-container {
+		margin-left: 40px;
+	}
+	.existing-user-container {
+		margin-left: 52px;
+	}	
+	.summary-paragraph {
+		font-size: 24px;
+		margin-left: 50px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.wtd-logo-container {
+		margin-top: 20px;
+	}
+}	
+
+@media screen and (min-width: 470px) and (max-width: 550px) {
+	.summary-paragraph {
+		font-size: 24px;
+		margin-left: 50px;
+	}
+	.existing-user-container {
+		margin: 20px 0 0 52px;
+	}
+	.wtd-logo-container {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+	.summary-paragraph {
+		font-size: 24px;
+		margin-left: 40px;
+	}
+	.existing-user-container {
+		margin: 20px 0 30px 40px;
+	}
+	.wtd-logo-container {
+		margin-top: 20px;
+	}
+}
+
+

@@ -1,0 +1,50 @@
+extends layout
+
+block content
+	nav.header-wrapper
+		img(src='/flashstack-small-logo.png').wtd-small-logo
+		a(href="/auth/logout").nav-link.pull-right LOG OUT
+	//- Wrapper container
+	
+	div.wrapper 
+		div.top-section-wrapper
+			//- Print the currently logged-in user's name
+			h1.welcome-page-h1 Welcome, #{user.username}!
+
+			//- Page Summary
+			h3.welcome-page-h3 Here is a list of instructions on how to use Flash Stack:
+			p.flashstack-instructions 1. Enter a question and answer into the text box
+			p.flashstack-instructions 2. Click 'Create A Card' to view your digital flash card below
+			p.flashstack-instructions 3. Questions are on the front of the card - mouse over the card to see the answer
+			p.flashstack-instructions 4. If you would like to delete a card, a delete button is located on the back of each card
+			p.flashstack-instructions 5. Your flash cards are saved to your account, ready to use again on your next visit!
+
+			form#card-form
+				input(type="text", placeholder="Question", name="question").question-input.input-text-field
+				input(type="text", placeholder="Answer", name="answer").answer-input.input-text-field
+				button(type="submit", placeholder="Create A Card").submit-button.btn Create A Card
+		
+		<hr class="horizontal-uno">
+
+		//- ul
+		//- 	for card in cards
+		//- 		li= card.question	
+		//- 		li= card.answer
+		//- 		li
+		//- 			a(href="/delete/#{item._id}") Delete This Card
+
+		.card-container
+		div.center-block: div.row#row-container
+			for item in cards
+				div.card-list.col-lg-3.col-md-4.col-sm-6(data-id= "#{item._id}")
+					div.card-wrapper
+						div.card-declare
+							div.card-question
+								h4.card-header Q 
+								<hr class="horizontal-dos"><br/>
+								p #{item.question}	
+							div.card-answer
+								h4.card-header A
+								<hr class="horizontal-dos">
+								p #{item.answer} 	
+								button.card-delete-button.btn DELETE
